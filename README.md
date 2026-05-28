@@ -4,7 +4,7 @@ A small, self-contained design system that feels woven rather than rendered. Use
 
 > *The UI feels constructed rather than rendered, using subtle pixel-level motifs on dividers and borders to simulate the "stitch" of a loom.*
 
-Inspired by Romanian *scoarță* — woven wool carpets dyed with madder, ochre, and indigo — translated into a precise, local-first computing aesthetic.
+Inspired by Romanian woven wool carpets dyed with madder, ochre, and indigo — translated into a precise computing aesthetic.
 
 ## What's in the box
 
