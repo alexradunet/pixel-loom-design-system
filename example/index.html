@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Loom · Linen swatch</title>
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../tokens/linen.css">
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="../components.css">
+  <style>
+    .swatch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: var(--space-sm);
+      margin: var(--space-md) 0;
+    }
+    .swatch {
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .swatch-fill { height: 60px; }
+    .swatch-meta {
+      padding: 8px 12px;
+      background: var(--surface-container-low);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      line-height: 1.4;
+    }
+    .swatch-name { color: var(--on-surface); text-transform: uppercase; letter-spacing: 0.04em; }
+    .swatch-hex { color: var(--on-surface-variant); }
+    .type-sample { margin: var(--space-sm) 0; padding: var(--space-sm); border: 1px solid var(--outline-variant); border-radius: var(--radius); }
+    .type-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--on-surface-variant);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="meta-line">
+        <span>Pixel Loom · Linen variant</span>
+        <span class="meta-dot" aria-hidden="true"></span>
+        <a href="indigo.html">switch to Indigo →</a>
+      </p>
+
+      <div class="brand-row">
+        <svg class="brand-mark" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0"  y="0"  width="5" height="5" fill="#983f20"/>
+          <rect x="20" y="0"  width="5" height="5" fill="#983f20"/>
+          <rect x="10" y="10" width="5" height="5" fill="#983f20"/>
+          <rect x="0"  y="20" width="5" height="5" fill="#983f20"/>
+          <rect x="20" y="20" width="5" height="5" fill="#983f20"/>
+          <rect x="5"  y="5"  width="5" height="5" fill="#e9c267"/>
+          <rect x="15" y="5"  width="5" height="5" fill="#e9c267"/>
+          <rect x="5"  y="15" width="5" height="5" fill="#e9c267"/>
+          <rect x="15" y="15" width="5" height="5" fill="#e9c267"/>
+        </svg>
+        <h1 class="brand">Linen</h1>
+      </div>
+      <p class="tagline italic">Warm linen variant — Madder Red as dominant thread.</p>
+    </header>
+
+    <hr class="stitch" aria-hidden="true">
+
+    <section>
+      <h2>Palette</h2>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="swatch-fill" style="background: var(--surface);"></div><div class="swatch-meta"><div class="swatch-name">Surface</div><div class="swatch-hex">#fff8f6</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--surface-container);"></div><div class="swatch-meta"><div class="swatch-name">Container</div><div class="swatch-hex">#fdeae4</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--outline-variant);"></div><div class="swatch-meta"><div class="swatch-name">Outline var.</div><div class="swatch-hex">#dcc1b8</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--outline);"></div><div class="swatch-meta"><div class="swatch-name">Outline</div><div class="swatch-hex">#89726b</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--on-surface);"></div><div class="swatch-meta"><div class="swatch-name">Ink</div><div class="swatch-hex">#231916</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--primary);"></div><div class="swatch-meta"><div class="swatch-name">Primary</div><div class="swatch-hex">#983f20 madder</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--primary-container);"></div><div class="swatch-meta"><div class="swatch-name">Primary cont.</div><div class="swatch-hex">#b85736</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--secondary-fixed-dim);"></div><div class="swatch-meta"><div class="swatch-name">Ochre</div><div class="swatch-hex">#e9c267</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--secondary);"></div><div class="swatch-meta"><div class="swatch-name">Secondary</div><div class="swatch-hex">#775a03</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--tertiary);"></div><div class="swatch-meta"><div class="swatch-name">Tertiary</div><div class="swatch-hex">#00656b teal</div></div></div>
+      </div>
+    </section>
+
+    <hr class="stitch" aria-hidden="true">
+
+    <section>
+      <h2>Typography</h2>
+      <div class="type-sample">
+        <p class="type-label">Headline · Newsreader 600 / 56px</p>
+        <h1 class="brand">The quick brown fox</h1>
+      </div>
+      <div class="type-sample">
+        <p class="type-label">Lede · Newsreader 500 / 28px</p>
+        <p class="lede">Sphinx of black quartz, judge my vow — Brașov, Romania.</p>
+      </div>
+      <div class="type-sample">
+        <p class="type-label">Body · Work Sans 400 / 17px</p>
+        <p>Pack my box with five dozen liquor jugs. Romanian glyphs: șț ăî â test render correctly under the latin-ext subset.</p>
+      </div>
+      <div class="type-sample">
+        <p class="type-label">Mono · JetBrains Mono 500 / 13px</p>
+        <pre>npm install @nazar/nazar-pi
+export NAZAR_HOME="$HOME/NazarVault"
+/nazar-setup memory</pre>
+      </div>
+    </section>
+
+    <hr class="stitch" aria-hidden="true">
+
+    <section>
+      <h2>Components</h2>
+
+      <p class="type-label">Stitched list</p>
+      <ul class="stitched-list" style="margin-bottom: var(--space-md);">
+        <li>Tactile, not rendered.</li>
+        <li>Tonal layers over elevation.</li>
+        <li>Pixel-stitch dividers.</li>
+        <li>4px radius, 4px notch, 4px rhythm.</li>
+      </ul>
+
+      <p class="type-label">Card grid</p>
+      <div class="card-grid" style="margin-bottom: var(--space-md);">
+        <article class="card">
+          <header class="card-head">
+            <h3 class="card-name">sample-project</h3>
+            <span class="card-status">Current</span>
+          </header>
+          <p>Short description of what this project does, with a maker's voice and clear stakes.</p>
+          <ul class="card-tags">
+            <li>tag-one</li>
+            <li>tag-two</li>
+            <li>tag-three</li>
+          </ul>
+          <a class="card-link" href="#">link.to/project</a>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <h3 class="card-name">another-project</h3>
+            <span class="card-status muted">Predecessor</span>
+          </header>
+          <p>Demonstrates the muted status variant for older / sister projects.</p>
+          <ul class="card-tags">
+            <li>tag-one</li>
+            <li>tag-two</li>
+          </ul>
+          <a class="card-link" href="#">link.to/another</a>
+        </article>
+      </div>
+
+      <p class="type-label">Primary button</p>
+      <p>
+        <a class="button-primary" href="#">
+          Primary action <span class="button-arrow" aria-hidden="true">→</span>
+        </a>
+      </p>
+    </section>
+
+    <hr class="stitch" aria-hidden="true">
+
+    <section>
+      <h2>Contact (sample)</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Repo</span>
+          <span class="contact-value"><a href="https://github.com/alexradunet/pixel-loom-design-system">github.com/alexradunet/pixel-loom-design-system</a></span>
+        </li>
+        <li>
+          <span class="contact-label">Author</span>
+          <span class="contact-value"><a href="https://alexradu.net">alexradu.net</a></span>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="colophon">
+      <p>Linen variant · Madder red on warm wool.</p>
+      <p><a href="indigo.html">View Indigo variant →</a></p>
+    </footer>
+  </main>
+</body>
+</html>

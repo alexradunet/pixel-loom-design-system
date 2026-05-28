@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Loom · Linen Dark swatch</title>
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../tokens/linen-dark.css">
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="../components.css">
+  <style>
+    .swatch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: var(--space-sm);
+      margin: var(--space-md) 0;
+    }
+    .swatch {
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .swatch-fill { height: 60px; }
+    .swatch-meta {
+      padding: 8px 12px;
+      background: var(--surface-container-low);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      line-height: 1.4;
+    }
+    .swatch-name { color: var(--on-surface); text-transform: uppercase; letter-spacing: 0.04em; }
+    .swatch-hex { color: var(--on-surface-variant); }
+    .type-sample { margin: var(--space-sm) 0; padding: var(--space-sm); border: 1px solid var(--outline-variant); border-radius: var(--radius); }
+    .type-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--on-surface-variant);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="meta-line">
+        <span>Pixel Loom · Linen Dark variant</span>
+        <span class="meta-dot" aria-hidden="true"></span>
+        <a href="index.html">switch to Linen →</a>
+        <span class="meta-dot" aria-hidden="true"></span>
+        <a href="indigo.html">switch to Indigo →</a>
+      </p>
+
+      <div class="brand-row">
+        <svg class="brand-mark" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0"  y="0"  width="5" height="5" fill="#ffb59d"/>
+          <rect x="20" y="0"  width="5" height="5" fill="#ffb59d"/>
+          <rect x="10" y="10" width="5" height="5" fill="#ffb59d"/>
+          <rect x="0"  y="20" width="5" height="5" fill="#ffb59d"/>
+          <rect x="20" y="20" width="5" height="5" fill="#ffb59d"/>
+          <rect x="5"  y="5"  width="5" height="5" fill="#e9c267"/>
+          <rect x="15" y="5"  width="5" height="5" fill="#e9c267"/>
+          <rect x="5"  y="15" width="5" height="5" fill="#e9c267"/>
+          <rect x="15" y="15" width="5" height="5" fill="#e9c267"/>
+        </svg>
+        <h1 class="brand">Linen Dark</h1>
+      </div>
+      <p class="tagline italic">The midnight workshop — same warmth, deeper wool.</p>
+    </header>
+
+    <hr class="stitch" aria-hidden="true">
+
+    <section>
+      <h2>Palette</h2>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="swatch-fill" style="background: var(--surface);"></div><div class="swatch-meta"><div class="swatch-name">Surface</div><div class="swatch-hex">#1a110f</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--surface-container);"></div><div class="swatch-meta"><div class="swatch-name">Container</div><div class="swatch-hex">#271d1a</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--surface-container-high);"></div><div class="swatch-meta"><div class="swatch-name">Lifted</div><div class="swatch-hex">#322824</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--outline-variant);"></div><div class="swatch-meta"><div class="swatch-name">Outline var.</div><div class="swatch-hex">#56423c</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--outline);"></div><div class="swatch-meta"><div class="swatch-name">Outline</div><div class="swatch-hex">#a48b84</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--on-surface);"></div><div class="swatch-meta"><div class="swatch-name">Bleached linen</div><div class="swatch-hex">#f1dfd9</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--primary);"></div><div class="swatch-meta"><div class="swatch-name">Primary</div><div class="swatch-hex">#ffb59d peach</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--primary-container);"></div><div class="swatch-meta"><div class="swatch-name">Primary cont.</div><div class="swatch-hex">#b85736 madder</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--secondary-fixed-dim);"></div><div class="swatch-meta"><div class="swatch-name">Ochre</div><div class="swatch-hex">#e9c267 kept</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background: var(--tertiary);"></div><div class="swatch-meta"><div class="swatch-name">Tertiary</div><div class="swatch-hex">#76d5dc teal</div></div></div>
+      </div>
+    </section>
+
+    <hr class="stitch" aria-hidden="true">
+
+    <section>
+      <h2>Typography</h2>
+      <div class="type-sample">
+        <p class="type-label">Headline · Newsreader 600 / 56px</p>
+        <h1 class="brand">The quick brown fox</h1>
+      </div>
+      <div class="type-sample">
+        <p class="type-label">Lede · Newsreader 500 / 28px</p>
+        <p class="lede">Sphinx of black quartz, judge my vow — Brașov, Romania.</p>
+      </div>
+      <div class="type-sample">
+        <p class="type-label">Body · Work Sans 400 / 17px</p>
+        <p>Pack my box with five dozen liquor jugs. Romanian glyphs: șț ăî â render correctly under the latin-ext subset, even on dark wool.</p>
+      </div>
+      <div class="type-sample">
+        <p class="type-label">Mono · JetBrains Mono 500 / 13px</p>
+        <pre>nazar status
+memory_search "where did I park the car"
+/voice push-to-talk</pre>
+      </div>
+    </section>
+
+    <hr class="stitch" aria-hidden="true">
+
+    <section>
+      <h2>Same components, midnight wool</h2>
+
+      <ul class="stitched-list" style="margin-bottom: var(--space-md);">
+        <li>Tactile, not rendered.</li>
+        <li>Tonal layers over elevation.</li>
+        <li>Pixel-stitch dividers and ochre notches.</li>
+        <li>Operator-grade legibility in low-light environments.</li>
+      </ul>
+
+      <div class="card-grid" style="margin-bottom: var(--space-md);">
+        <article class="card">
+          <header class="card-head">
+            <h3 class="card-name mono">memory</h3>
+            <span class="card-status">Core</span>
+          </header>
+          <p>Durable memory, generated context, searchable project knowledge. Works the same whether the room is bright or dark.</p>
+          <ul class="card-tags">
+            <li>/memory</li>
+            <li>memory_status</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <h3 class="card-name mono">voice</h3>
+            <span class="card-status muted">I/O</span>
+          </header>
+          <p>Text-to-speech and push-to-talk. Especially nice when working late.</p>
+          <ul class="card-tags">
+            <li>/tts</li>
+            <li>/voice</li>
+          </ul>
+        </article>
+      </div>
+
+      <p>
+        <a class="button-primary" href="#">
+          Primary action <span class="button-arrow" aria-hidden="true">→</span>
+        </a>
+      </p>
+    </section>
+
+    <footer class="colophon">
+      <p>Linen Dark · Warm peach on deep dyed wool. Ochre and teal kept bright for legibility.</p>
+      <p><a href="index.html">View Linen Light →</a> &nbsp; <a href="indigo.html">View Indigo →</a></p>
+    </footer>
+  </main>
+</body>
+</html>

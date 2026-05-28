@@ -1,0 +1,244 @@
+/* ─────────────────────────────────────────────────────────────
+   Pixel Loom · Components
+   Reusable patterns: cards, buttons, code blocks, contact list,
+   colophon. Assumes base.css and tokens already loaded.
+   ───────────────────────────────────────────────────────────── */
+
+/* ─── Card grid (project/extension layout) ────────────── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+@media (max-width: 800px) {
+  .card-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── Card (base + variants) ──────────────────────────── */
+.card {
+  position: relative;
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+/* The signature 4×4 ochre notch — top-right corner */
+.card::after,
+.experiments-cta::after,
+.pixel-notch::after,
+pre::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 4px;
+  height: 4px;
+  background: var(--secondary-fixed-dim);
+}
+
+.card-head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+.card-name {
+  font-family: var(--font-headline);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0;
+}
+.card-name.mono {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 500;
+}
+.card-status {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background: rgba(184, 87, 54, 0.10);
+  color: var(--primary);
+  border: 1px solid var(--primary-container);
+}
+.card-status.muted {
+  background: rgba(233, 194, 103, 0.15);
+  color: var(--on-secondary-container);
+  border-color: var(--secondary-fixed-dim);
+}
+.card p {
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+  color: var(--on-surface);
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: var(--space-xs) 0 0 0;
+}
+.card-tags li {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  padding: 2px 6px;
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-sm);
+  color: var(--on-surface-variant);
+}
+
+.card-link {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--outline-variant);
+  padding-bottom: 1px;
+  align-self: flex-start;
+  margin-top: var(--space-xs);
+  transition: border-color 0.15s ease;
+}
+.card-link::before {
+  content: '→ ';
+  color: var(--secondary-fixed-dim);
+}
+.card-link:hover,
+.card-link:focus { border-bottom-color: var(--primary); }
+
+/* ─── Experiments / CTA card ──────────────────────────── */
+.experiments-cta {
+  position: relative;
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.experiments-cta h3 {
+  font-family: var(--font-headline);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--on-surface);
+  margin: 0 0 6px 0;
+}
+.experiments-cta p {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--on-surface-variant);
+  margin: 0 auto var(--space-sm) auto;
+  max-width: 460px;
+}
+
+/* ─── Primary button ──────────────────────────────────── */
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--primary-container);
+  color: var(--on-primary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  text-decoration: none;
+  position: relative;
+  transition: background-color 0.15s ease;
+}
+.button-primary:hover,
+.button-primary:focus {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+.button-primary::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 4px;
+  height: 4px;
+  background: var(--secondary-fixed-dim);
+}
+.button-arrow {
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+/* ─── Code block ──────────────────────────────────────── */
+pre {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.55;
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  overflow-x: auto;
+  color: var(--on-surface);
+  margin: 0;
+  position: relative;
+}
+
+/* ─── Contact list ────────────────────────────────────── */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.contact-list li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  padding: var(--space-xs) 0;
+  border-bottom: 1px dashed var(--outline-variant);
+}
+.contact-list li:last-child {
+  border-bottom: none;
+}
+.contact-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  min-width: 90px;
+  flex-shrink: 0;
+}
+.contact-value { font-size: 17px; }
+
+/* ─── Colophon ────────────────────────────────────────── */
+.colophon {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--on-surface-variant);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px dashed var(--outline-variant);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+.colophon p { margin: 0; }
